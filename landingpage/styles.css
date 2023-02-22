@@ -1,0 +1,183 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vh;
+    /* border: 1px solid red; */
+    font-family: roboto;
+}
+
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* HEADER */
+
+.header {
+    display: flex;
+    background-color: #1F2937;
+    color: white;
+    align-items: center;
+    padding: 20px 200px;
+
+}
+
+.logo {
+    /* margin-right: auto; */
+    flex: 1 0 200px;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+.header ul {
+    display: flex;
+    font-size: 18px;
+}
+
+.header li + li {
+    margin-left: 20px;
+}
+
+/* HIGHLIGHT */
+
+.highlight {
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: start;
+    background-color: #1F2937;
+    padding: 80px 200px;
+    column-gap: 50px;
+    color: white;
+}
+
+.highlight h1 {
+    line-height: 1.3em;
+}
+
+.highlight h2 {
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.button {
+    background-color: #3B82F6;
+    margin-top: 10px;
+    width: 80px;
+    text-align: center;
+    padding: 5px 0px;
+    border-radius: 5px;
+
+}
+
+/* Radom info */
+
+.randominfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 200px;
+}
+
+.randominfo p {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Images Row */
+
+.inforow {
+    display: flex;
+    column-gap: 40px;
+    margin: 0 200px;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 10px;
+    width: 130px;
+}
+
+.photo {
+    border: 4px solid #3B82F6;
+    border-radius: 10px;
+    width: 130px;
+    height: 130px;
+
+}
+
+.text {
+    flex-grow: 0;
+}
+
+/* QUOTE */
+
+.quotes {
+    background: #E5E7EB;
+    text-align: left;
+    padding: 100px 300px;
+    font-size: 25px;
+
+}
+
+.quotes .author {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+/* Sign Up Box */
+
+.signupbox {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 200px;
+    background-color: #3B82F6;
+    padding: 40px 90px;
+    border-radius: 10px;
+    color: white;
+}
+
+.signupbox h1 {
+    font-size: 20px;
+}
+
+.signupbox h2 {
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.signupbox .button {
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 0px;
+    background: #1F2937;
+    color: white;
+}
