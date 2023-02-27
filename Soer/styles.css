@@ -31,28 +31,18 @@ a:active {
 
 body {
     padding: 50px;
-    /* min-width: 950px; */
 }
 
-/* IMG HOVER */
-/* img:hover {
-    transform: scale(1.1);
-    transition: 550ms ease-in-out;
-    display: block;
-    
-} */
+
 
 /* Header */
 
 .header {
     display: flex;
-    /* max-height: 100%; */
-    /* min-width: 980px; */
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
     padding: 10px 0px 10px 0;
-    /* background-color: #D9E4DA; */
     column-gap: 50px;
     
 }
@@ -60,14 +50,12 @@ body {
 .header .logo {
     max-width: 300px;
     flex-shrink: 0;
-    /* border: 3px solid blue; */
 }
 
 .menu {
     flex: 0 1 auto;
     display: flex;
     padding: 10px 10px 10px 10px;
-    /* border: 3px solid blue; */
 }
 
 .menu li + li {
@@ -126,7 +114,7 @@ body {
 }
 
 
-
+/* Label Content */
 .label p {
     text-align: center;
 }
@@ -144,7 +132,7 @@ width: 80%;
     border-bottom: 1px;
 }
 
-/* Box 1 img */
+/* Img boxes*/
 
 .boxesimg {
     object-fit: fill;
@@ -171,20 +159,7 @@ width: 80%;
 }
 
 
-/* Container 2 */
 
-
-
-
-/* Box 2 img */
-
-
-.box2 img {
-    object-fit: fill;
-    border-radius: 15px 0 0 0;
-    min-width: auto;
-
-}
 
 
 
