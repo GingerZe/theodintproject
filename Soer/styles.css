@@ -16,7 +16,10 @@ body, p, h1, ul, li, blockquote {
 body {
     font-family: arial, impact, serif;
     padding: 50px;
+    /* background-image: url("/img/bg.jpeg"); */
 }
+
+
 
 li {
     list-style: none;
@@ -85,8 +88,8 @@ a:active {
 
 .label {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    grid-template-rows: repeat(1, 1fr);
     flex-grow: 1;
     align-content: center;
     justify-content: center;
@@ -165,5 +168,70 @@ width: 80%;
 
 }
 
+
+/* PRODUCTS PAGE */
+
+
+.containerproducts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+}
+
+.productimgthumb {
+    grid-area: img;
+    object-fit: fill;
+    flex-grow: 1;
+    /* border-radius: 0 0 10px 10px;         */
+
+}
+
+.allinfoshort {
+    /* border: 5px solid pink; */
+    grid-area: allinfo;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-areas:
+        "name price"
+        "shortdescrip shortdescrip";
+
+        border-top: 4px dashed rgb(77, 76, 76);
+        background-color: #c7c4c310;
+}
+
+
+
+.product {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    grid-template-areas: 
+        "img"
+        "allinfo";
+}
+
+.short {
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.name.short {
+    grid-area: name;
+}
+
+.price.short {
+    grid-area: price;
+    text-align: end;
+}
+
+.descriptionshort {
+    font-size: 1em;
+    grid-area: shortdescrip;
+    background-color: #d9e4da;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+}
 
 
