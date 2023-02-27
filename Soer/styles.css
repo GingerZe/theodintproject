@@ -31,98 +31,107 @@ a:active {
 
 body {
     padding: 50px;
+    /* min-width: 950px; */
 }
 
 /* IMG HOVER */
-img:hover {
-    opacity: 0.95;
+/* img:hover {
     transform: scale(1.1);
     transition: 550ms ease-in-out;
-}
-
-
+    display: block;
+    
+} */
 
 /* Header */
 
 .header {
     display: flex;
-    flex-wrap: wrap;
-    max-height: 100%;
+    /* max-height: 100%; */
+    /* min-width: 980px; */
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
-    padding: 10px 10px 10px 0;
+    padding: 10px 0px 10px 0;
     /* background-color: #D9E4DA; */
-    align-content: space-around;
-    min-width: 980px;
-
-
+    column-gap: 50px;
+    
 }
 
 .header .logo {
     max-width: 300px;
+    flex-shrink: 0;
+    /* border: 3px solid blue; */
 }
 
 .menu {
+    flex: 0 1 auto;
     display: flex;
-    padding: 0px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    /* border: 3px solid blue; */
 }
 
 .menu li + li {
     margin-left: 50px;
 }
 
+.menu li {
+    flex: 1 1 100px;
+}
+
 .menu li a {
     font-size: 2em;
     color: black;
-
 }
 
 /* Grid content */
 .container {
-    display: grid;
-    grid-template: "label1 box1" minmax(0px, 1fr)
-                    "box2 label2" minmax(0px, 1fr) /
-                    minmax(400px, 1fr) minmax(400px, 1fr);
+    display: flex;
     margin: 0px auto;
     grid-gap: 50px 0px;
     max-width: 1200px;
 }
 
 
-.boxes {
+
+.boxesimg {
+    overflow: hidden;
+    flex: 1 0 400px;
+}
+
+
+.label {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-rows: repeat(1, 1fr);
+    flex-grow: 1;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
     border: 0px solid white;
     background-color: #d9e4da;
 }
 
-.boxesimg {
-    overflow: hidden;
-}
+/* Labels design */
 
-
-.box2 {
-
-}
-
-/* Label 1 content */
-
-.label1 {
-    display: flex;
-    flex-wrap: wrap;
-    grid-template-rows: repeat(1, 1fr);
-    align-content: center;
-    justify-content: center;
-    padding: 10px;
+.label.leftbox {
     border-right: dashed;
     border-width: 2px 4px 2px 2px;
     border-radius: 15px 0 0 0;
 }
 
-.label1 p {
+.label.rightbox {
+    border-left: dashed;
+    border-width: 2px 2px 2px 4px;
+    border-radius:  0 0 15px 0;
+}
+
+
+
+.label p {
     text-align: center;
 }
 
-.label1 .title {
+.label .title {
     font-size: 3em;
 }
 
@@ -130,18 +139,40 @@ hr {
 width: 80%;
 }
 
-.label1 .subtitle {
+.label .subtitle {
     font-size: 2em;
     border-bottom: 1px;
 }
 
 /* Box 1 img */
 
-
-.box1 img {
+.boxesimg {
     object-fit: fill;
     min-width: auto;
+}
+
+.imgright {
+
     border-radius: 0 0 15px 0;
+}
+
+.imgleft {
+
+    border-radius: 15px 0 0  0;
+}
+
+/* Description */
+
+.description {
+    text-align: center;
+    font-size: 2em;
+    margin: 50px 0;
+    padding: 0 50px;
+}
+
+
+/* Container 2 */
+
 
 
 
@@ -152,6 +183,7 @@ width: 80%;
     object-fit: fill;
     border-radius: 15px 0 0 0;
     min-width: auto;
+
 }
 
 
