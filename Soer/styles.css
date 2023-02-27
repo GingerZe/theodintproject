@@ -15,6 +15,7 @@ body, p, h1, ul, li, blockquote {
 
 body {
     font-family: arial, impact, serif;
+    padding: 50px;
 }
 
 li {
@@ -28,11 +29,6 @@ a {
 a:active {
     color: none;
 }
-
-body {
-    padding: 50px;
-}
-
 
 
 /* Header */
@@ -67,7 +63,7 @@ body {
 }
 
 .menu li a {
-    font-size: 2em;
+    font-size: 1.8em;
     color: black;
 }
 
@@ -153,13 +149,21 @@ width: 80%;
 
 .description {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 50px 0;
     padding: 0 50px;
 }
 
 
+/* FOOTER */
 
+.footer {
+    background-color: #d9e4da;
+    margin-top: 30px;
+    padding: 5px;
+    text-align: center;
+
+}
 
 
 
