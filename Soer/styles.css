@@ -52,14 +52,14 @@ body {
 }
 
 .header .logo {
-    max-width: 300px;
-    flex-shrink: 0;
+    flex: 0 0 300px;
 }
 
 .menu {
     flex: 0 1 auto;
     display: flex;
     padding: 10px 10px 10px 10px;
+    align-items: center;
 }
 
 .menu li + li {
@@ -68,6 +68,7 @@ body {
 
 .menu li {
     flex: 1 1 100px;
+    text-align: center;
 }
 
 .menu li a {
@@ -99,14 +100,14 @@ body {
     align-content: center;
     justify-content: center;
     padding: 10px;
-    background-color: #d9e4da;
+    background-color: #d9e4da85;
 }
 
 /* Labels design */
 
 .label.leftbox {
     border-right: dashed;
-    border-width: 20px 4px 20px 0px;
+    border-width: 0px 4px 0px 0px;
     border-radius: 25px 0 0 25px;
     border-color: rgb(77, 76, 76);
 }
@@ -163,15 +164,8 @@ width: 80%;
 }
 
 
-/* FOOTER */
 
-.footer {
-    background-color: #d9e4da;
-    margin-top: 30px;
-    padding: 5px;
-    text-align: center;
 
-}
 
 
 /* PRODUCTS PAGE */
@@ -203,8 +197,6 @@ width: 80%;
         border-top: 4px dashed rgb(77, 76, 76);
         background-color: #c7c4c310;
 }
-
-
 
 .product {
     display: grid;
@@ -241,6 +233,7 @@ width: 80%;
     border-left: 10px solid white; */
 }
 
+
 @media (max-width: 1350px) {
 
     body {
@@ -261,3 +254,90 @@ width: 80%;
 }
 
 
+/* NEW! */
+
+/* Top 3 products */
+
+.newcollection {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.containernewproducts {
+    display: flex;
+    column-gap: 20px;
+}
+ 
+.newcollection .product {
+    flex: 1 1 400px;
+}
+
+
+.containernewproducts .short {
+    font-size: 1.5em;
+}
+
+/* Horizontal container Info */
+
+.newcollectionlabel.rightbox {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+.infodetails.new {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-areas: 
+        "datainfo1 valueinfo1"
+        "datainfo2 valueinfo2"
+        "datainfo3 valueinfo3"
+        "datainfo4 valueinfo4"
+        "datainfo5 valueinfo5";
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.data {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.data.info1 {
+    grid-area: datainfo1;
+}
+
+.data.info2 {
+    grid-area: datainfo2;
+}
+
+.data.info3 {
+    grid-area: datainfo3;
+}
+
+.data.info4 {
+    grid-area: datainfo4;
+}
+
+.data.info5 {
+    grid-area: datainfo5;
+}
+
+
+.value.info1 {
+    grid-area: valueinfo1;
+}
+
+/* FOOTER */
+
+.footer > p {
+    background-color: #d9e4da;
+    margin-top: 60px;
+    padding: 5px;
+    text-align: center;
+
+}
