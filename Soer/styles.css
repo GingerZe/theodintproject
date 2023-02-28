@@ -33,6 +33,11 @@ a:active {
     color: none;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
 
 /* Header */
 
@@ -70,11 +75,11 @@ a:active {
     color: black;
 }
 
-/* Grid content */
+/* homepage divs */
 .container {
     display: flex;
     margin: 0px auto;
-    grid-gap: 50px 0px;
+    column-gap: 10px;
     max-width: 1200px;
 }
 
@@ -94,7 +99,6 @@ a:active {
     align-content: center;
     justify-content: center;
     padding: 10px;
-    border: 0px solid white;
     background-color: #d9e4da;
 }
 
@@ -102,14 +106,16 @@ a:active {
 
 .label.leftbox {
     border-right: dashed;
-    border-width: 2px 4px 2px 2px;
-    border-radius: 15px 0 0 0;
+    border-width: 20px 4px 20px 0px;
+    border-radius: 25px 0 0 25px;
+    border-color: rgb(77, 76, 76);
 }
 
 .label.rightbox {
     border-left: dashed;
-    border-width: 2px 2px 2px 4px;
+    border-width: 0px 0px 0px 4px;
     border-radius:  0 0 15px 0;
+    border-color: rgb(77, 76, 76);
 }
 
 
@@ -136,15 +142,14 @@ width: 80%;
 .boxesimg {
     object-fit: fill;
     min-width: auto;
+    
 }
 
 .imgright {
-
     border-radius: 0 0 15px 0;
 }
 
 .imgleft {
-
     border-radius: 15px 0 0  0;
 }
 
@@ -153,8 +158,8 @@ width: 80%;
 .description {
     text-align: center;
     font-size: 1.5em;
-    margin: 50px 0;
-    padding: 0 50px;
+    margin: 50px auto;
+    width: 60%;
 }
 
 
@@ -232,6 +237,27 @@ width: 80%;
     margin-top: 10px;
     padding: 10px;
     border-radius: 0 0 5px 5px;
+    /* border-right: 10px solid white;
+    border-left: 10px solid white; */
+}
+
+@media (max-width: 1350px) {
+
+    body {
+        min-width: 900px;
+    }
+
+    .containerproducts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 25px;
+    }
+
+    .allinfoshort > p {
+        font-size: 1.5em;
+    }
+
+    
 }
 
 
