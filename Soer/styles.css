@@ -15,7 +15,6 @@ body, p, h1, ul, li, blockquote {
 
 body {
     font-family: arial, impact, serif;
-    padding: 50px;
     /* background-image: url("/img/bg.jpeg"); */
 }
 
@@ -37,22 +36,26 @@ body {
     display: flex;
     flex-direction: column;
     align-content: center;
+    max-width: 1300px;
+    justify-content: center;
+    margin: 20px auto;
 }
 
 /* Header */
 
 .header {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 30px auto;
     padding: 10px 0px 10px 0;
     column-gap: 50px;
-    
+
 }
 
 .header .logo {
-    flex: 0 0 300px;
+    flex: 0 1 200px;
+    margin-right: auto;
 }
 
 .menu {
@@ -67,8 +70,9 @@ body {
 }
 
 .menu li {
-    flex: 1 1 100px;
+    /* flex: 1 2 100px; */
     text-align: center;
+    
 }
 
 .menu li a {
@@ -164,9 +168,39 @@ width: 80%;
 }
 
 
+/* HOMEPAGE MOBILE */
+
+@media (max-width: 900px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 600px;
+    }
+
+    .label.leftbox {
+        border-bottom: dashed;
+        border-width: 0px 0px 4px 0px;
+        border-radius: 25px 0px 0 0;
+        border-color: rgb(77, 76, 76);
+    }
+
+
+    /* .label.leftbox {
+        border-right: dashed;
+        border-width: 0px 4px 0px 0px;
+        border-radius: 25px 0px 0 0;
+        border-color: rgb(77, 76, 76);
+    } */
 
 
 
+    .boxesimg {
+        object-fit: fill;
+        width: max-content;
+        
+    }
+}
 
 /* PRODUCTS PAGE */
 
